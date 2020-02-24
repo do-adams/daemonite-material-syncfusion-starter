@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta content="initial-scale=1, shrink-to-fit=no, width=device-width" name="viewport">
     <title>Daemonite Material Syncfusion Starter</title>
+    <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
 </head>
 <body class="bg-light h-100">
     <header class="navbar navbar-dark navbar-full bg-primary doc-navbar-default">
@@ -43,276 +44,63 @@
     <main class="mt-5">
         <div class="container">
             <h1 class="mb-5">Daemonite Material Syncfusion Starter</h1>
-            <div class="e-card theme-comp cat-editors layout-card theme-comp" id="cat-editors">
-                <div class="e-card-header theme-category-text">
-                    <div class="e-card-header-caption">
-                        <div class="e-card-header-title">Editors</div>
-                    </div>
-                </div>
-                <div class="e-card-content">
-                    <div class="control-area" id="textbox">
-                        <span class="component-name">TextBox</span>
-                        <div class="e-float-input">
-                            <input type="text" required="">
-                            <span class="e-float-line"></span>
-                            <label class="e-float-text">Label</label>
-                        </div>
-                    </div>
-                    <div class="control-area" id="numerictextbox">
-                        <span class="component-name"> NumericTextBox</span>
-                        <span class="e-control-wrapper e-numeric e-input-group e-valid-input"><input
-                                id="component-numeric" type="text" class="e-control e-numerictextbox e-lib e-input"
-                                role="spinbutton" tabindex="0" autocomplete="off" aria-live="assertive"
-                                aria-valuemin="-1.7976931348623157e+308" aria-valuemax="1.7976931348623157e+308"
-                                aria-valuenow="15" value="15.00"><input type="hidden" validatehidden="true"
-                                name="component-numeric" value="15"><span class="e-input-group-icon e-spin-down"
-                                title="Decrement value" aria-label="Decrement value"></span><span
-                                class="e-input-group-icon e-spin-up" title="Increment value"
-                                aria-label="Increment value"></span></span>
-                    </div>
-                    <div class="control-area" id="maskedtextbox">
-                        <span class="component-name">MaskedTextBox</span>
-                        <span class="e-widget e-control-wrapper e-mask e-input-group e-valid-input"><input
-                                id="component-maskedtextbox" type="text" class="e-control e-maskedtextbox e-lib e-input"
-                                name="component-maskedtextbox" role="textbox" autocomplete="off" autocorrect="off"
-                                autocapitalize="off" spellcheck="false" aria-live="assertive"
-                                aria-valuenow="___-___-____" aria-invalid="false"></span>
-                    </div>
-                    <div class="control-area" id="slider">
-                        <span class="component-name">Slider</span>
-                        <div class="e-slider-container e-control-wrapper e-horizontal e-material-slider">
-                            <div id="component-slider" class="e-control e-slider e-lib" tabindex="-1">
-                                <div class="e-slider-track"></div>
-                                <div class="e-handle e-handle-first e-control e-tooltip e-lib" role="slider"
-                                    aria-labelledby="component-slider_title" tabindex="0" aria-orientation="horizontal"
-                                    aria-valuemin="0" aria-valuemax="100" aria-valuenow="30" aria-valuetext="30"
-                                    data-tooltip-id="tooltip_4_content"
-                                    style="left: 104.681px; transition: none 0s ease 0s; z-index: 9;"></div>
-                                <div class="e-handle e-material-handle" style="left: 104.681px;"></div>
-                                <div class="e-range" style="left: 0px; width: 104.681px; transition: none 0s ease 0s;">
-                                </div>
-                            </div><input type="hidden" value="30" name="component-slider" class="e-slider-input"
-                                tabindex="-1">
-                        </div>
-                    </div>
-                    <div class="control-area" id="inplace-editor">
-                        <span class="component-name">Inplace Editor</span>
-                        <div id="component-inplace-editor" class="e-control e-inplaceeditor e-lib" tabindex="0"
-                            title="Click to edit">
-                            <div class="e-editable-value-wrapper" id="component-inplace-editor_wrap"><span
-                                    class="e-editable-value">Andrew</span><span class="e-editable-overlay-icon e-icons"
-                                    title="Click to edit"></span></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="e-card cat-buttons layout-card theme-comp" id="cat-button">
-                <div class="e-card-header theme-category-text">
-                    <div class="e-card-header-caption">
-                        <div class="e-card-header-title">Buttons</div>
-                    </div>
-                </div>
-                <div class="e-card-content">
-                    <div class="control-area" id="button">
-                        <span class="component-name">Button</span>
-                        <div class="row">
-                            <div class="col">
-                                <button id="primarybtn" class="e-control e-btn e-lib e-primary"
-                                    data-ripple="true">Primary</button>
-                            </div>
-                            <div class="col">
-                                <button id="normalbtn" class="e-control e-btn e-lib" data-ripple="true">Normal</button>
-                            </div>
-                            <div class="col">
-                                <button id="outlinebtn" class="e-control e-btn e-lib e-outline e-primary"
-                                    data-ripple="true">Outline</button>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <button id="successbtn" class="e-control e-btn e-lib e-success"
-                                    data-ripple="true">Success</button>
-                            </div>
-                            <div class="col">
-                                <button id="warningbtn" class="e-control e-btn e-lib e-warning"
-                                    data-ripple="true">Warning</button>
-                            </div>
-                            <div class="col">
-                                <button id="togglebtn" class="e-control e-btn e-lib e-flat e-primary"
-                                    data-ripple="true"><span
-                                        class="e-btn-icon e-btn-sb-icons e-play-icon e-icon-left"></span>Play</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="control-area" id="drop-down-button">
-                        <span class="component-name">DropDownButton</span>
-                        <div class="row">
-                            <div class="col">
-                                <button id="textbtn" class="e-control e-dropdown-btn e-lib e-btn" data-ripple="true"
-                                    aria-haspopup="true" aria-expanded="false" aria-owns="textbtn-popup"
-                                    type="button">Profile<span
-                                        class="e-btn-icon e-icons e-icon-right e-caret"></span></button>
-                            </div>
-                            <div class="col">
-                                <button id="icontextbtn" class="e-control e-dropdown-btn e-lib e-btn e-primary"
-                                    data-ripple="true" aria-haspopup="true" aria-expanded="false"
-                                    aria-owns="icontextbtn-popup" type="button"><span
-                                        class="e-btn-icon e-ddb-icons e-profile e-icon-left"></span>Profile<span
-                                        class="e-btn-icon e-icons e-icon-right e-caret"></span></button>
-                            </div>
-                            <div class="col">
-                                <button id="custombtn" class="e-control e-dropdown-btn e-lib e-btn e-caret-hide"
-                                    data-ripple="true" aria-haspopup="true" aria-expanded="false"
-                                    aria-owns="custombtn-popup" type="button">Profile<span
-                                        class="e-btn-icon e-icons e-icon-right e-caret"></span></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="control-area" id="split-button">
-                        <span class="component-name">SplitButton</span>
-                        <div class="row">
-                            <div class="col">
-                                <div class="e-split-btn-wrapper"><button id="iconsplitbtn"
-                                        class="e-control e-lib e-btn e-icon-btn e-split-btn e-keyboard"
-                                        data-ripple="true" type="button" aria-expanded="false" aria-haspopup="true"
-                                        aria-label=" splitbutton" aria-owns="iconsplitbtn_dropdownbtn-popup"><span
-                                            class="e-btn-icon e-btn-icons e-paste"></span></button><button
-                                        class="e-icon-btn e-control e-dropdown-btn e-lib e-btn"
-                                        id="iconsplitbtn_dropdownbtn" tabindex="-1" data-ripple="true"
-                                        aria-haspopup="true" aria-expanded="false"
-                                        aria-owns="iconsplitbtn_dropdownbtn-popup" type="button"><span
-                                            class="e-btn-icon e-icons e-caret"></span></button></div>
-                            </div>
-                            <div class="col">
-                                <div class="e-split-btn-wrapper e-primary"><button id="textsplitbtn"
-                                        class="e-control e-lib e-btn e-primary e-split-btn e-keyboard"
-                                        data-ripple="true" type="button" aria-expanded="false" aria-haspopup="true"
-                                        aria-label="Paste splitbutton"
-                                        aria-owns="textsplitbtn_dropdownbtn-popup">Paste</button><button
-                                        class="e-icon-btn e-control e-dropdown-btn e-lib e-btn e-primary"
-                                        id="textsplitbtn_dropdownbtn" tabindex="-1" data-ripple="true"
-                                        aria-haspopup="true" aria-expanded="false"
-                                        aria-owns="textsplitbtn_dropdownbtn-popup" type="button"><span
-                                            class="e-btn-icon e-icons e-caret"></span></button></div>
-                            </div>
-                            <div class="col">
-                                <div class="e-split-btn-wrapper"><button id="icontextsplitbtn"
-                                        class="e-control e-lib e-btn e-split-btn e-keyboard" data-ripple="true"
-                                        type="button" aria-expanded="false" aria-haspopup="true"
-                                        aria-label="Paste splitbutton"
-                                        aria-owns="icontextsplitbtn_dropdownbtn-popup"><span
-                                            class="e-btn-icon e-btn-icons e-paste e-icon-left"></span>Paste</button><button
-                                        class="e-icon-btn e-control e-dropdown-btn e-lib e-btn"
-                                        id="icontextsplitbtn_dropdownbtn" tabindex="-1" data-ripple="true"
-                                        aria-haspopup="true" aria-expanded="false"
-                                        aria-owns="icontextsplitbtn_dropdownbtn-popup" type="button"><span
-                                            class="e-btn-icon e-icons e-caret"></span></button></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="control-area" id="button-group">
-                        <span class="component-name">ButtonGroup</span>
-                        <div class="frame">
-                            <div class="grpbtn">
-                                <div class="e-btn-group" role="group">
-                                    <input type="radio" id="left" name="align">
-                                    <label class="e-btn" for="left" data-ripple="true">Left</label>
-                                    <input type="radio" id="center" name="align">
-                                    <label class="e-btn" for="center" data-ripple="true">Center</label>
-                                    <input type="radio" id="right" name="align">
-                                    <label class="e-btn" for="right" data-ripple="true">Right</label>
-                                </div>
-                            </div>
-                            <div class="grpbtn">
-                                <div class="e-btn-group e-outline" role="group">
-                                    <input type="checkbox" id="bold" name="fontstyle">
-                                    <label class="e-btn e-outline e-primary" for="bold" data-ripple="true">Bold</label>
-                                    <input type="checkbox" id="italic" name="fontstyle">
-                                    <label class="e-btn e-outline e-primary" for="italic"
-                                        data-ripple="true">Italic</label>
-                                    <input type="checkbox" id="underline" name="fontstyle">
-                                    <label class="e-btn e-outline e-primary" for="underline"
-                                        data-ripple="true">Underline</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="control-area" id="progress-button">
-                        <span class="component-name">ProgressButton</span>
-                        <div class="row">
-                            <div class="col">
-                                <button id="spinleft" class="e-control e-progress-btn e-lib e-primary e-btn e-spin-left"
-                                    data-ripple="true" aria-label="Spin Left progress" aria-valuemin="0"
-                                    aria-valuemax="100" aria-valuenow="0"><span class="e-spinner">
-                                        <div class="e-spinner-pane e-spin-hide">
-                                            <div class="e-spinner-inner"><svg class="e-spin-material" id="1l6Xt"
-                                                    viewBox="0 0 16 16"
-                                                    style="height: 16px; width: 16px; transform-origin: 8px 8px 8px;">
-                                                    <path class="e-path-circle" d="M8,0.8A7.2,7.2 0 1 1 0.8,8"
-                                                        stroke-width="1.6" stroke-dasharray="33.929200658769766"
-                                                        stroke-dashoffset="101.33521263419237"></path>
-                                                </svg></div>
-                                        </div>
-                                    </span><span class="e-btn-content">Spin Left</span></button>
-                            </div>
-                            <div class="col">
-                                <button id="spinright"
-                                    class="e-control e-progress-btn e-lib e-primary e-btn e-spin-right"
-                                    data-ripple="true" aria-label="Spin Right progress" aria-valuemin="0"
-                                    aria-valuemax="100" aria-valuenow="0"><span class="e-btn-content">Spin
-                                        Right</span><span class="e-spinner">
-                                        <div class="e-spinner-pane e-spin-hide">
-                                            <div class="e-spinner-inner"><svg class="e-spin-material" id="lQ4hr"
-                                                    viewBox="0 0 16 16"
-                                                    style="height: 16px; width: 16px; transform-origin: 8px 8px 8px;">
-                                                    <path class="e-path-circle" d="M8,0.8A7.2,7.2 0 1 1 0.8,8"
-                                                        stroke-width="1.6" stroke-dasharray="33.929200658769766"
-                                                        stroke-dashoffset="101.33521263419237"></path>
-                                                </svg></div>
-                                        </div>
-                                    </span></button>
-                            </div>
-                            <div class="col">
-                                <button id="download"
-                                    class="e-control e-progress-btn e-lib e-hide-spinner e-progress-top e-btn e-spin-left"
-                                    data-ripple="true" aria-label="Download progress" aria-valuemin="0"
-                                    aria-valuemax="100" aria-valuenow="0"><span class="e-spinner">
-                                        <div class="e-spinner-pane e-spin-hide">
-                                            <div class="e-spinner-inner"><svg class="e-spin-material" id="7dKFw"
-                                                    viewBox="0 0 16 16"
-                                                    style="height: 16px; width: 16px; transform-origin: 8px 8px 8px;">
-                                                    <path class="e-path-circle" d="M8,0.8A7.2,7.2 0 1 1 0.8,8"
-                                                        stroke-width="1.6" stroke-dasharray="33.929200658769766"
-                                                        stroke-dashoffset="101.33521263419237"></path>
-                                                </svg></div>
-                                        </div>
-                                    </span><span class="e-btn-content"><span
-                                            class="e-btn-icon e-btn-sb-icons e-download-icon e-icon-left"></span>Download</span><span
-                                        class="e-progress"></span></button>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <button id="disabled" class="e-control e-progress-btn e-lib e-btn e-spin-left"
-                                    disabled="" data-ripple="true" aria-label="Disabled progress" aria-valuemin="0"
-                                    aria-valuemax="100" aria-valuenow="0"><span class="e-spinner">
-                                        <div class="e-spinner-pane e-spin-hide">
-                                            <div class="e-spinner-inner"><svg class="e-spin-material" id="VUpMV"
-                                                    viewBox="0 0 16 16"
-                                                    style="height: 16px; width: 16px; transform-origin: 8px 8px 8px;">
-                                                    <path class="e-path-circle" d="M8,0.8A7.2,7.2 0 1 1 0.8,8"
-                                                        stroke-width="1.6" stroke-dasharray="33.929200658769766"
-                                                        stroke-dashoffset="101.33521263419237"></path>
-                                                </svg></div>
-                                        </div>
-                                    </span><span class="e-btn-content">Disabled</span></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+            <!-- Add HTML button element -->
+            <button id="btn">Button</button>
+            <hr>
+            <!-- Add the HTML <div> element  -->
+            <div id="accordion"></div>
+            <hr>
+            <div id="PivotFieldList"></div>
+            <div id="PivotTable"></div>
         </div>
     </main>
     <script src="./index.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            ej.base.enableRipple(true);
+
+            // Initialize Essential JS 2 JavaScript Button control
+            var button = new ej.buttons.Button({ isPrimary: true });
+            button.appendTo('#btn');
+
+            //Initialize Accordion component
+            var accordion = new ej.navigations.Accordion({
+            items: [
+                { header: 'ASP.NET', expanded: 'true', content: 'Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services.' },
+                { header: 'ASP.NET MVC', content: 'The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller.' },
+                { header: 'JavaScript', content: 'JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.' },
+            ]
+            });
+            //Render initialized Accordion component
+            accordion.appendTo('#accordion');
+
+            var pivotData = [
+            { 'Sold': 31, 'Amount': 52824, 'Country': 'France', 'Products': 'Mountain Bikes', 'Year': 'FY 2015', 'Quarter': 'Q1' },
+            { 'Sold': 51, 'Amount': 86904, 'Country': 'France', 'Products': 'Mountain Bikes', 'Year': 'FY 2015', 'Quarter': 'Q2' },
+            { 'Sold': 90, 'Amount': 153360, 'Country': 'France', 'Products': 'Mountain Bikes', 'Year': 'FY 2015', 'Quarter': 'Q3' },
+            { 'Sold': 25, 'Amount': 42600, 'Country': 'France', 'Products': 'Mountain Bikes', 'Year': 'FY 2015', 'Quarter': 'Q4' },
+            { 'Sold': 27, 'Amount': 46008, 'Country': 'France', 'Products': 'Mountain Bikes', 'Year': 'FY 2016', 'Quarter': 'Q1' }];
+
+            var pivotTableObj = new ej.pivotview.PivotView({
+                dataSourceSettings: {
+                    dataSource: pivotData,
+                    expandAll: false,
+                    enableSorting: true,
+                    allowLabelFilter: true,
+                    allowValueFilter: true,
+                    drilledMembers: [{ name: 'Country', items: ['France'] }],
+                    columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
+                    values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
+                    rows: [{ name: 'Country' }, { name: 'Products' }],
+                    formatSettings: [{ name: 'Amount', format: 'C0' }],
+                    filters: []
+                },
+                height: 350,
+                showFieldList: true,
+            });
+            pivotTableObj.appendTo('#PivotTable');
+        });
+    </script>
 </body>
 </html>
